@@ -15,9 +15,26 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        fetchPhotos()
     }
 
+    private func fetchPhotos() {
+        guard let url = URL(string: Link.url.rawValue) else { return }
+        
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
 
+            let decoder = JSONDecoder()
+            do {
+                let info = try decoder.decode(Photo.self, from: data)
+                print(info)
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }.resume()
+    }
 }
 

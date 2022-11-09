@@ -14,9 +14,8 @@ class RoverViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 100
+        tableView.rowHeight = 120
         fetchPhotos()
-        //fetchPhotos()
     }
     
     // MARK: - Table view data source
@@ -30,8 +29,6 @@ class RoverViewController: UITableViewController {
         if let photo = roverPhoto?.photos[indexPath.row] {
             cell.configure(with: photo)
         }
-
-        
         return cell
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF516100291BAEBF008FCEAA /* RoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5160FF291BAEBF008FCEAA /* RoverViewController.swift */; };
 		EF9C4D442919323B00174F24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4D432919323B00174F24 /* AppDelegate.swift */; };
 		EF9C4D462919323B00174F24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4D452919323B00174F24 /* SceneDelegate.swift */; };
 		EF9C4D482919323B00174F24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4D472919323B00174F24 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF5160FF291BAEBF008FCEAA /* RoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverViewController.swift; sourceTree = "<group>"; };
 		EF9C4D402919323B00174F24 /* MarsRoverPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsRoverPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9C4D432919323B00174F24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF9C4D452919323B00174F24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				EF9C4D472919323B00174F24 /* ViewController.swift */,
+				EF5160FF291BAEBF008FCEAA /* RoverViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF9C4D5C2919330B00174F24 /* Photo.swift in Sources */,
+				EF516100291BAEBF008FCEAA /* RoverViewController.swift in Sources */,
 				EF9C4D482919323B00174F24 /* ViewController.swift in Sources */,
 				EF9C4D442919323B00174F24 /* AppDelegate.swift in Sources */,
 				EF9C4D462919323B00174F24 /* SceneDelegate.swift in Sources */,

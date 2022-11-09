@@ -10,10 +10,9 @@ import UIKit
 class CustomViewCell: UITableViewCell {
 
     @IBOutlet var photoRoverImage: UIImageView!
-    
-    @IBOutlet var roverNameLabel: UILabel!
-    @IBOutlet var cameraNameLabel: UILabel!
-    @IBOutlet var datePhotoLabel: UILabel!
 
+    
+    @IBOutlet var photoInfo: UILabel!
+    
 
 }

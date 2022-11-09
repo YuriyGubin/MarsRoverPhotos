@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AE72266291BF3AD0093CFAE /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE72265291BF3AD0093CFAE /* CustomViewCell.swift */; };
+		6AE72268291BF9890093CFAE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE72267291BF9890093CFAE /* NetworkManager.swift */; };
 		EF516100291BAEBF008FCEAA /* RoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5160FF291BAEBF008FCEAA /* RoverViewController.swift */; };
 		EF9C4D442919323B00174F24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4D432919323B00174F24 /* AppDelegate.swift */; };
 		EF9C4D462919323B00174F24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4D452919323B00174F24 /* SceneDelegate.swift */; };
-		EF9C4D482919323B00174F24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4D472919323B00174F24 /* ViewController.swift */; };
+		EF9C4D482919323B00174F24 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9C4D472919323B00174F24 /* DetailViewController.swift */; };
 		EF9C4D4B2919323B00174F24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9C4D492919323B00174F24 /* Main.storyboard */; };
 		EF9C4D4D2919323D00174F24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9C4D4C2919323D00174F24 /* Assets.xcassets */; };
 		EF9C4D502919323D00174F24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9C4D4E2919323D00174F24 /* LaunchScreen.storyboard */; };
@@ -18,11 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6AE72265291BF3AD0093CFAE /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
+		6AE72267291BF9890093CFAE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = MarsRoverPhotos/Views/NetworkManager.swift; sourceTree = SOURCE_ROOT; };
 		EF5160FF291BAEBF008FCEAA /* RoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverViewController.swift; sourceTree = "<group>"; };
 		EF9C4D402919323B00174F24 /* MarsRoverPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsRoverPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9C4D432919323B00174F24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF9C4D452919323B00174F24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF9C4D472919323B00174F24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF9C4D472919323B00174F24 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EF9C4D4A2919323B00174F24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF9C4D4C2919323D00174F24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF9C4D4F2919323D00174F24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AE72264291BF3810093CFAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6AE72265291BF3AD0093CFAE /* CustomViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EF9C4D372919323B00174F24 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +72,7 @@
 		EF9C4D422919323B00174F24 /* MarsRoverPhotos */ = {
 			isa = PBXGroup;
 			children = (
+				6AE72264291BF3810093CFAE /* Views */,
 				EF9C4D5A291932B900174F24 /* Services */,
 				EF9C4D59291932B100174F24 /* Models */,
 				EF9C4D572919325A00174F24 /* App */,
@@ -100,6 +113,7 @@
 		EF9C4D5A291932B900174F24 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				6AE72267291BF9890093CFAE /* NetworkManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -107,7 +121,7 @@
 		EF9C4D5D2919333A00174F24 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EF9C4D472919323B00174F24 /* ViewController.swift */,
+				EF9C4D472919323B00174F24 /* DetailViewController.swift */,
 				EF5160FF291BAEBF008FCEAA /* RoverViewController.swift */,
 			);
 			path = ViewControllers;
@@ -185,8 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF9C4D5C2919330B00174F24 /* Photo.swift in Sources */,
+				6AE72266291BF3AD0093CFAE /* CustomViewCell.swift in Sources */,
 				EF516100291BAEBF008FCEAA /* RoverViewController.swift in Sources */,
-				EF9C4D482919323B00174F24 /* ViewController.swift in Sources */,
+				6AE72268291BF9890093CFAE /* NetworkManager.swift in Sources */,
+				EF9C4D482919323B00174F24 /* DetailViewController.swift in Sources */,
 				EF9C4D442919323B00174F24 /* AppDelegate.swift in Sources */,
 				EF9C4D462919323B00174F24 /* SceneDelegate.swift in Sources */,
 			);

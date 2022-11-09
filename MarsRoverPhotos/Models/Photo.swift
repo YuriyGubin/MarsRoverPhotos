@@ -13,30 +13,54 @@ struct PhotoElement: Decodable {
     let id: Int
     let sol: Int
     let camera: Camera
-    let img_src: String
-    let earth_date: String
+    let imageSource: String
+    let earthDate: String
     let rover: Rover
     
     var description: String {
         """
         Rover: \(rover.name)
         Camera: \(camera.name)
-        Date: \(earth_date)
+        Date: \(earthDate)
         """
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case sol = "sol"
+        case camera = "camera"
+        case imageSource = "img_src"
+        case earthDate = "earth_date"
+        case rover = "rover"
     }
 }
 
 struct Camera: Decodable {
     let id: Int
     let name: String
-    let rover_id: Int
-    let full_name: String
+    let roverID: Int
+    let fullName: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case name = "name"
+        case roverID = "rover_id"
+        case fullName = "full_name"
+    }
 }
 
 struct Rover: Decodable {
     let id: Int
     let name: String
-    let landing_date: String
-    let launch_date: String
+    let landingDate: String
+    let launchDate: String
     let status: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case name = "name"
+        case landingDate = "landing_date"
+        case launchDate = "launch_date"
+        case status = "status"
+    }
 }

@@ -17,10 +17,8 @@ class DetailViewController: UIViewController {
     var detail: PhotoElement!
     
     private func setupViews() {
-        photoImage.image = UIImage(named: detail.img_src)
+        photoImage.image = UIImage(named: detail.imageSource)
         descriptionLabel.text = detail.description
     }
-
-    
 }
 

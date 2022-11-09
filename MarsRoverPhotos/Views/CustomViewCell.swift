@@ -16,7 +16,7 @@ class CustomViewCell: UITableViewCell {
     func configure(with photo: PhotoElement) {
         photoInfo.text = photo.description
         
-        photoRoverImage.image = UIImage(named: photo.img_src)
+        photoRoverImage.image = UIImage(named: photo.imageSource)
         photoRoverImage.layer.cornerRadius = photoRoverImage.frame.size.height / 2
         photoRoverImage.clipsToBounds = true
     }

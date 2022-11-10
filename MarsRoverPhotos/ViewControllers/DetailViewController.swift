@@ -22,7 +22,6 @@ class DetailViewController: UIViewController {
     }
     
     private func setupViews() {
-        photoImage.image = UIImage(named: detail.imageSource)
         descriptionLabel.text = detail.secondDescription
         title = "Photo ID: \(detail.id)"
         

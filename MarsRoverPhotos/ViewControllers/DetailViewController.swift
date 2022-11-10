@@ -23,7 +23,8 @@ class DetailViewController: UIViewController {
     
     private func setupViews() {
         photoImage.image = UIImage(named: detail.imageSource)
-        descriptionLabel.text = detail.description
+        descriptionLabel.text = detail.secondDescription
+        title = "Photo ID: \(detail.id)"
         
         NetworkManager.shared.fetchImage(from: detail.imageSource) { [weak self] result in
             switch result {

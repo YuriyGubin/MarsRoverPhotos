@@ -25,6 +25,16 @@ struct PhotoElement: Decodable {
         """
     }
     
+    var secondDescription: String {
+        """
+        Rover: \(rover.name)
+        Launch date: \(rover.launchDate)
+        Camera: \(camera.fullName)
+        Sol: \(sol)
+        Photo date: \(earthDate)
+        """
+    }
+    
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case sol = "sol"

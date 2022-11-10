@@ -63,7 +63,9 @@
                             <outlet property="delegate" destination="2O6-hs-Fp5" id="JDw-0j-1Yi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Mars Rover Photos" id="sKX-Ok-Fzz"/>
+                    <navigationItem key="navigationItem" title="Mars Rover Photos" id="sKX-Ok-Fzz">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="YnQ-WI-bAQ"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUH-ao-1DT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

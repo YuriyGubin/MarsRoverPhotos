@@ -25,10 +25,8 @@ class CustomViewCell: UITableViewCell {
                 self.photoRoverImage.image = UIImage(data: imageData)
             }
         }
-        
-
-//        photoRoverImage.layer.cornerRadius = photoRoverImage.frame.size.height / 2
-//        photoRoverImage.clipsToBounds = true
+        photoRoverImage.layer.cornerRadius = photoRoverImage.frame.size.height / 2
+        photoRoverImage.clipsToBounds = true
     }
 
 }

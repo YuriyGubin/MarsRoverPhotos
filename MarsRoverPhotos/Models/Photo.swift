@@ -22,7 +22,6 @@ struct PhotoElement: Decodable {
         Rover: \(rover.name)
         Camera: \(camera.name)
         Date: \(earthDate)
-        Sol: \(sol)
         """
     }
     

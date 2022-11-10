@@ -14,7 +14,7 @@ class RoverViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 120
+        tableView.rowHeight = 100
         fetchPhotos()
     }
     

@@ -82,8 +82,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rvE-Pb-gbZ">
                                 <rect key="frame" x="16" y="91" width="358" height="216"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8S-Qb-Zrv">
-                                <rect key="frame" x="16" y="327" width="358" height="20.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8S-Qb-Zrv">
+                                <rect key="frame" x="89" y="315" width="212" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -93,12 +93,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rvE-Pb-gbZ" firstAttribute="leading" secondItem="Qyc-la-YZ6" secondAttribute="leading" constant="16" id="3LH-rZ-uqv"/>
+                            <constraint firstItem="t8S-Qb-Zrv" firstAttribute="centerX" secondItem="2Aw-cD-NVc" secondAttribute="centerX" id="DNw-gf-am5"/>
                             <constraint firstItem="rvE-Pb-gbZ" firstAttribute="height" secondItem="2Aw-cD-NVc" secondAttribute="height" multiplier="0.255924" id="Pxg-XC-YJU"/>
-                            <constraint firstItem="t8S-Qb-Zrv" firstAttribute="top" secondItem="rvE-Pb-gbZ" secondAttribute="bottom" constant="20" id="eBk-rs-dMV"/>
+                            <constraint firstItem="t8S-Qb-Zrv" firstAttribute="top" secondItem="rvE-Pb-gbZ" secondAttribute="bottom" constant="8" symbolic="YES" id="b6L-Bh-Lql"/>
+                            <constraint firstItem="t8S-Qb-Zrv" firstAttribute="width" secondItem="2Aw-cD-NVc" secondAttribute="width" multiplier="0.54359" id="cZp-CJ-cxz"/>
                             <constraint firstItem="rvE-Pb-gbZ" firstAttribute="top" secondItem="Qyc-la-YZ6" secondAttribute="top" id="fwB-Cf-hUp"/>
-                            <constraint firstItem="t8S-Qb-Zrv" firstAttribute="leading" secondItem="Qyc-la-YZ6" secondAttribute="leading" constant="16" id="oE6-1x-cuR"/>
                             <constraint firstItem="Qyc-la-YZ6" firstAttribute="trailing" secondItem="rvE-Pb-gbZ" secondAttribute="trailing" constant="16" id="tY5-Dw-MuK"/>
-                            <constraint firstItem="Qyc-la-YZ6" firstAttribute="trailing" secondItem="t8S-Qb-Zrv" secondAttribute="trailing" constant="16" id="tcy-MG-jzV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="McS-Z4-Rtu"/>

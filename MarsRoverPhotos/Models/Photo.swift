@@ -20,7 +20,7 @@ struct PhotoElement: Decodable {
     var description: String {
         """
         Rover: \(rover.name)
-        Camera: \(camera.name)
+        Photo ID: \(id)
         Date: \(earthDate)
         """
     }

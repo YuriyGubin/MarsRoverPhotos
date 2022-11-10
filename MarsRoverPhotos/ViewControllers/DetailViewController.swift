@@ -24,6 +24,15 @@ class DetailViewController: UIViewController {
     private func setupViews() {
         photoImage.image = UIImage(named: detail.imageSource)
         descriptionLabel.text = detail.description
+        
+        NetworkManager.shared.fetchImage(from: detail.imageSource) { [weak self] result in
+            switch result {
+            case .success(let imageData):
+                self?.photoImage.image = UIImage(data: imageData)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }
 

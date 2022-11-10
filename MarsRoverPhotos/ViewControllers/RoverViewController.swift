@@ -25,7 +25,12 @@ class RoverViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CustomViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: "cell",
+            for: indexPath) as? CustomViewCell else {
+            return UITableViewCell()
+            
+        }
         if let photo = roverPhoto?.photos[indexPath.row] {
             cell.configure(with: photo)
         }

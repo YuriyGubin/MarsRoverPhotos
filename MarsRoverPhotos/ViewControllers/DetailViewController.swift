@@ -12,20 +12,13 @@ class DetailViewController: UIViewController {
     
     @IBOutlet var photoImage: UIImageView!
     
-    @IBOutlet var photoView: UIView!
     @IBOutlet var descriptionLabel: UILabel!
     
     var detail: PhotoElement!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        photoView.layer.cornerRadius = 10
-        photoView.clipsToBounds = true
-        photoImage.layer.shadowColor = UIColor.black.withAlphaComponent(0.5).cgColor
-        photoImage.layer.shadowOffset = CGSize(width: 6, height: 6)
-        photoImage.layer.shadowOpacity = 1
-        photoImage.layer.shadowRadius = 2
-        photoImage.layer.masksToBounds = false
+        
         setupViews()
     }
     
@@ -41,6 +34,11 @@ class DetailViewController: UIViewController {
                 print(error)
             }
         }
+        photoImage.layer.shadowColor = UIColor.black.withAlphaComponent(0.5).cgColor
+        photoImage.layer.shadowOffset = CGSize(width: 0, height: 10)
+        photoImage.layer.shadowOpacity = 1
+        photoImage.layer.shadowRadius = 5
+        photoImage.layer.masksToBounds = false
     }
 }
 

@@ -9,7 +9,7 @@ import UIKit
 
 class CustomViewCell: UITableViewCell {
 
-    @IBOutlet var photoRoverImage: UIImageView!
+    @IBOutlet var roverImage: UIImageView!
 
     @IBOutlet var photoInfo: UILabel!
     
@@ -22,11 +22,17 @@ class CustomViewCell: UITableViewCell {
             guard let imageData = try? Data(contentsOf: imageUrl) else { return }
             
             DispatchQueue.main.async {
-                self.photoRoverImage.image = UIImage(data: imageData)
+                self.roverImage.image = UIImage(data: imageData)
             }
         }
-        photoRoverImage.layer.cornerRadius = 10
-        photoRoverImage.clipsToBounds = true
+        
+        roverImage.layer.shadowColor = UIColor.black.cgColor
+        roverImage.layer.shadowOffset = CGSize(width: 0, height: 5)
+        roverImage.layer.shadowOpacity = 0.8
+        roverImage.layer.shadowRadius = 6
+        roverImage.layer.masksToBounds = false
+        
+        
     }
 
 }

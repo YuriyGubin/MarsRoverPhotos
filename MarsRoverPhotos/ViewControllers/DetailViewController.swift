@@ -18,6 +18,7 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        photoImage.layer.cornerRadius = 15
         setupViews()
     }
     
